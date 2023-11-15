@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="phone">
+    <div class="status-bar">
+      <div class="time">12:00</div>
+      <div class="internet-signal"></div>
+      <div class="battery"></div>
+    </div>
+    <div class="lock-screen active">
+      <p>Phone is locked</p>
+    </div>
+    <div class="error-message" style="display: none;">
+      Wrong Password!
+    </div>
+    <div class="piano-container">
+      <div class="piano">
+        <div class="piano-keys">
+          <div data-note="C" class="key white"></div>
+          <div data-note="Db" class="key black"></div>
+          <div data-note="D" class="key white"></div>
+          <div data-note="Eb" class="key black"></div>
+          <div data-note="E" class="key white"></div>
+          <div data-note="Gb" class="key black"></div>
+          <div data-note="G" class="key white"></div>
+          <div data-note="Ab" class="key black"></div>
+          <div data-note="A" class="key white"></div>
+          <div data-note="Bb" class="key black"></div>
+          <div data-note="B" class="key white"></div>
+        </div>
+      </div>
+    </div>
+    <div class="home-screen" style="display: none;">
+      <div class="app instagram"></div>
+      <div class="app snapchat">Snapchat</div>
+      <div class="app maps">Maps</div>
+      <div class="app google">google</div>
+      
+      <!-- Add more app icons here -->
+    </div>
+  </div>
+  <audio id="C" src="https://cdn.glitch.global/886ddee4-e291-4958-a5ff-e0388639b3d3/piano-c_C_major.wav?v=1697515458353"></audio>
+  <audio id="Db" src="https://cdn.glitch.global/886ddee4-e291-4958-a5ff-e0388639b3d3/piano-c_C%20_major.mp3?v=1697515544608"></audio>
+  <audio id="D" src="https://cdn.glitch.global/886ddee4-e291-4958-a5ff-e0388639b3d3/piano-d_D_major.wav?v=1697515593671"></audio>
+  <audio id="Eb" src="https://cdn.glitch.global/886ddee4-e291-4958-a5ff-e0388639b3d3/piano-eb_D%20_major.mp3?v=1697515728218"></audio>
+  <audio id="E" src="https://cdn.glitch.global/886ddee4-e291-4958-a5ff-e0388639b3d3/piano-e_E_major.wav?v=1697515781490"></audio>
+  <audio id="Gb" src="https://cdn.glitch.global/886ddee4-e291-4958-a5ff-e0388639b3d3/piano-f_F%20_major.mp3?v=1697515961425"></audio>
+  <audio id="G" src="https://cdn.glitch.global/886ddee4-e291-4958-a5ff-e0388639b3d3/piano-g_G_major.wav?v=1697516013312"></audio>
+  <audio id="Ab" src="https://cdn.glitch.global/886ddee4-e291-4958-a5ff-e0388639b3d3/piano-g_G%20_major.mp3?v=1697516102390"></audio>
+  <audio id="A" src="https://cdn.glitch.global/886ddee4-e291-4958-a5ff-e0388639b3d3/piano-a_A_major.wav?v=1697516145032"></audio>
+  <audio id="Bb" src="https://cdn.glitch.global/886ddee4-e291-4958-a5ff-e0388639b3d3/piano-bb_A%20_major.mp3?v=1697516261633"></audio>
+  <audio id="B" src="https://cdn.glitch.global/886ddee4-e291-4958-a5ff-e0388639b3d3/piano-b_B_major.wav?v=1697516379131"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

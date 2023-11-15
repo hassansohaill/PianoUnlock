@@ -1,0 +1,187 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #143F6B;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone {
+  background: #000;
+  border: 10px solid #444; /* Increase border thickness */
+  border-radius: 30px; /* Increase border radius for a rounded look */
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 400px; /* Increase the width as needed */
+  height: 800px; /* Increase the height as needed */
+}
+
+
+.status-bar {
+  background: #444;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.time {
+  font-size: 16px;
+}
+
+.internet-signal {
+  width: 30px;
+  height: 18px;
+  background: #00FF00;
+  border: 1px solid #00CC00;
+  border-radius: 3px;
+}
+
+.battery {
+  width: 30px;
+  height: 18px;
+  background: #333;
+  border: 1px solid #222;
+  border-radius: 3px;
+}
+
+.piano {
+  display: flex;
+  padding: 20px;
+}
+
+/* Your existing CSS styles for the piano keys */
+.key {
+  height: calc(var(--width) * 2);
+  width: var(--width);
+  cursor: pointer;
+}
+
+.white {
+  --width: 50px; /* Adjust the width as per your preference */
+  background-color: white;
+  border: 1px solid #333;
+}
+
+.white.active {
+  background-color: #CCC;
+}
+
+.black {
+  --width: 30px; /* Adjust the width as per your preference */
+  background-color: black;
+  margin-left: calc(var(--width) / -2);
+  margin-right: calc(var(--width) / -2);
+  z-index: 2;
+}
+
+.black.active {
+  background-color: #333;
+}
+/* Your existing CSS styles for the phone and status bar */
+/* ... */
+
+.piano-container {
+  position: relative; /* Make the container a positioning context */
+  display: flex;
+  align-items: flex-end;
+  height: 70%;
+}
+
+.piano-wrapper {
+  position: absolute;
+  bottom: 0; /* Align the piano to the bottom */
+  left: 6%; /* Adjust the left value to move the piano to the left */
+}
+
+/* ... your existing styles ... */
+
+.piano-container {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 70%;
+  justify-content: center; /* Center the piano horizontally */
+}
+
+.piano .piano-keys {
+  display: flex;
+  justify-content: space-between; /* Space out the piano keys */
+  width: 80%; /* Adjust as needed */
+  margin: 0 auto; /* Center the piano keys within the container */
+}
+
+.key {
+  height: calc(var(--width) * 2);
+  width: var(--width);
+  cursor: pointer;
+  border: 1px solid #333;
+}
+
+.white {
+  --width: 50px; /* Adjust the width as per your preference */
+  background-color: white;
+}
+
+.black {
+  --width: 30px; /* Adjust the width as per your preference */
+  background-color: black;
+  position: relative;
+  z-index: 2;
+  margin-left: -15px; /* Half of the black key width */
+  margin-right: -15px; /* Half of the black key width */
+}
+.home-screen {
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: -300px; /* Adjust as needed */
+  text-align: center;
+  font-size: 18px; /* Adjust font size as needed */
+}
+
+.app {
+  width: 80px; /* Adjust the app icon width */
+  height: 80px; /* Adjust the app icon height */
+  background-color: #3498db; /* Adjust the app icon background color */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px; /* Adjust the margin between app icons */
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for specific apps (e.g., Instagram, Snapchat) */
+.instagram {
+  background-image: url("https://cdn.glitch.global/886ddee4-e291-4958-a5ff-e0388639b3d3/ig.jpeg?v=1697571312994");
+  background-size: 80px 80px;
+  
+}
+
+.snapchat {
+  background-color: #fffc00;
+}
+.maps {
+  background-color: #fffc00;
+}
+.google {
+  background-color: #fffc00;
+}
+
